@@ -1,0 +1,1 @@
+C:\Users\idan\Desktop\GameNew2\GameNew\GameNew.csproj;x64

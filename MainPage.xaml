@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="GameNew.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GameNew"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Canvas Name="MyCanvas">
+        <Canvas.Background>
+            <ImageBrush ImageSource="/Assets/SpaceBackGround.gif"/>
+        </Canvas.Background>
+        <Canvas Name="CanvasScore">
+            <TextBlock Name="score" Text="0" Canvas.Left="90" Foreground="#FF00FF0C" />
+            <TextBlock Name="damageLbl" Text="Damage:" Canvas.Top="40" Foreground="#FFA80202" />
+            <TextBlock Name="scoreLbl" Text="Score:" Foreground="#FF00FF0C" />
+            <TextBlock Name="damage" Text="0" Canvas.Left="130" Canvas.Top="40" Foreground="#FFA80202"/>
+        </Canvas>
+        <MediaPlayerElement x:Name="PlayMusic"  AutoPlay="True"/>
+    </Canvas>
+</Page>
